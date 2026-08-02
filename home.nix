@@ -23,7 +23,7 @@ in
     enable = true;
     shellAliases = {
       btw = "echo i use nixos-btw";
-      nrs = "sudo nixos-rebuild switch --flake ~/nixos-dotfiles#bogdan22tsb";
+      nrs = "sudo nixos-rebuild switch --impure --flake ~/nixos-dotfiles#bogdan22tsb";
       syu = "sudo nixos-rebuild switch --upgrade";
       fs = "fastfetch";
       e = "exit";
