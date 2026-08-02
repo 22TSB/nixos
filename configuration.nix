@@ -13,10 +13,15 @@
   networking.networkmanager.enable = true;
 
   time.timeZone = "Europe/Bucharest";
-
-  services.udisks2.enable = true;
-  services.gvfs.enable = true;
   services.displayManager.ly.enable = true;
+
+  services.xserver.windowManager.dwm = {
+    enable = true;
+    package = pkgs.dwm.overrideAttrs {
+      src = ./config/dwm;
+    };
+  };
+
   services.xserver = {
       enable = true;
       autoRepeatDelay = 200;
