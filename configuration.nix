@@ -15,6 +15,8 @@
   time.timeZone = "Europe/Bucharest";
   services.displayManager.ly.enable = true;
 
+  services.xserver.windowManager.oxwm.enable = true;
+
   services.xserver.windowManager.dwm = {
     enable = true;
     package = pkgs.dwm.overrideAttrs {
