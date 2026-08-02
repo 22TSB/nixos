@@ -60,5 +60,6 @@ in
     figlet
     cmatrix
     cava 
+    stress-ng
   ];
 }
