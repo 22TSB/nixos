@@ -6,8 +6,13 @@
       /etc/nixos/hardware-configuration.nix
     ];
 
-  boot.loader.grub.enable = true;
-  boot.loader.grub.device = "/dev/sda";
+  # legacy
+  # boot.loader.grub.enable = true;
+  # boot.loader.grub.device = "/dev/sda";
+ 
+  # uefi
+  boot.loader.systemd-boot.enable = true;
+  boot.loader.efi.canTouchEfiVariables= true;
 
   networking.hostName = "bogdan22tsb";
   # wired network
