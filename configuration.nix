@@ -72,6 +72,16 @@
     alacritty
   ];
 
+  # automatic  updating
+  system.autoUpgrade.enable = true;
+  system.autoUpgrade.dates = "weekly";
+  
+  # automatic cleanup
+  nix.gc.automatic = true;
+  nix.gc.dates = "daily";
+  nix.gc.options = "--delete-older-than 10d";
+  nix.settings.auto-optimise-store = true;
+
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   system.stateVersion = "26.05";
 }
