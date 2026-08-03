@@ -75,5 +75,6 @@ in
     cava 
     stress-ng
     zsh-powerlevel10k
+    nerd-fonts.caskaydia-mono
   ];
 }
