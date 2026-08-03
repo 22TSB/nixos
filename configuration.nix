@@ -20,6 +20,9 @@
     "TP-Link_E982" = {
       psk = "42736479";
     };
+    "TP-Link_E982_5G" = {
+      psk = "42736479";
+    };
   };
 
   time.timeZone = "Europe/Bucharest";
