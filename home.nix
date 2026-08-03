@@ -21,6 +21,7 @@ in
   home.stateVersion = "26.05";
 
   programs.zsh = {
+    enable = true;
     enableCompletion = true;
     autosuggestion.enable = true;
     syntaxHighlighting.enable = true;
@@ -36,15 +37,16 @@ in
       rn = "reboot";
     };
 
-    initExtra = ''
-      	  export PS1="\[\e[38;5;75m\]\u@\h \[\e[38;5;113m\]\w \[\e[38;5;189m\]\$ \[\e[0m\]"
-      	'';
-
     oh-my-zsh = {
       enable = true;
       theme = "robbyrussell";
       plugins = [ "git" "history" ];
     };
+
+    initContent = ''
+      source ${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k/powerlevel10k.zsh-theme
+      [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+    '';
   };
 
   xdg.configFile = builtins.mapAttrs
@@ -72,5 +74,6 @@ in
     cmatrix
     cava 
     stress-ng
+    zsh-powerlevel10k
   ];
 }

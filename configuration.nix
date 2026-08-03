@@ -47,6 +47,7 @@
 
   services.picom.enable = true;
 
+  users.defaultUserShell = pkgs.zsh;
   programs.zsh.enable = true;
   users.users.bogdan = {
     isNormalUser = true;
