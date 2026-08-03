@@ -10,7 +10,17 @@
   boot.loader.grub.device = "/dev/sda";
 
   networking.hostName = "bogdan22tsb";
-  networking.networkmanager.enable = true;
+  # wired network
+  # networking.networkmanager.enable = true;
+
+  # wireless network
+  networking.networkmanager.enable = false;
+  networking.wireless.enable = true;
+  networking.wireless.networks = {
+    "TP-Link_E982" = {
+      psk = "42736479";
+    };
+  };
 
   time.timeZone = "Europe/Bucharest";
   services.displayManager.ly.enable = true;
