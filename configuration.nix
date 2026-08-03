@@ -74,7 +74,6 @@
     vim
     wget
     git
-    alacritty
   ];
 
   # automatic  updating

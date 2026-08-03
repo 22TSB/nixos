@@ -12,6 +12,7 @@ let
     alacritty = "alacritty";
     picom = "picom";
     git = "git";
+    kitty = "kitty";
   };
 in
 
@@ -19,6 +20,9 @@ in
   home.username = "bogdan";
   home.homeDirectory = "/home/bogdan";
   home.stateVersion = "26.05";
+  home.sessionVariables = {
+    TERMINAL = "kitty";
+  };
 
   programs.zsh = {
     enable = true;
@@ -75,6 +79,8 @@ in
     cava 
     stress-ng
     zsh-powerlevel10k
+    kitty
+    alacritty
     nerd-fonts.caskaydia-mono
   ];
 }
