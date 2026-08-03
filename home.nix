@@ -76,6 +76,7 @@ in
     discord
     figlet
     cmatrix
+    unimatrix
     cava 
     stress-ng
     zsh-powerlevel10k
