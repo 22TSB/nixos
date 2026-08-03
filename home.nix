@@ -19,8 +19,12 @@ in
   home.username = "bogdan";
   home.homeDirectory = "/home/bogdan";
   home.stateVersion = "26.05";
-  programs.bash = {
-    enable = true;
+
+  programs.zsh = {
+    enableCompletion = true;
+    autosuggestion.enable = true;
+    syntaxHighlighting.enable = true;
+
     shellAliases = {
       btw = "echo i use nixos-btw";
       nrs = "sudo nixos-rebuild switch --impure --flake ~/nixos-dotfiles#bogdan22tsb";
@@ -31,9 +35,16 @@ in
       sd = "shutdown now";
       rn = "reboot";
     };
+
     initExtra = ''
       	  export PS1="\[\e[38;5;75m\]\u@\h \[\e[38;5;113m\]\w \[\e[38;5;189m\]\$ \[\e[0m\]"
       	'';
+
+    oh-my-zsh = {
+      enable = true;
+      theme = "robbyrussell";
+      plugins = [ "git" "history" ];
+    };
   };
 
   xdg.configFile = builtins.mapAttrs

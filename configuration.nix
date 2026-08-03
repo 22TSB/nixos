@@ -47,14 +47,10 @@
 
   services.picom.enable = true;
 
-  programs.bash = {
-    promptInit = ''
-      figlet TSB
-      '';
-  };
-
+  programs.zsh.enable = true;
   users.users.bogdan = {
     isNormalUser = true;
+    shell = pkgs.zsh;
     extraGroups = [ "wheel" ];
     packages = with pkgs; [
       tree
