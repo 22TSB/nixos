@@ -81,6 +81,5 @@ in
     zsh-powerlevel10k
     kitty
     alacritty
-    nerd-fonts.caskaydia-mono
   ];
 }
