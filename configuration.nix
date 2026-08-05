@@ -29,19 +29,19 @@
   networking.hostName = "bogdan22tsb";
 
   # wired network
-  networking.networkmanager.enable = true;
+  # networking.networkmanager.enable = true;
 
   # wireless network
-  # networking.networkmanager.enable = false;
-  # networking.wireless.enable = true;
-  # networking.wireless.networks = {
-  #   "TP-Link_E982" = {
-  #     psk = "42736479";
-  #   };
-  #   "TP-Link_E982_5G" = {
-  #     psk = "42736479";
-  #   };
-  # };
+  networking.networkmanager.enable = false;
+  networking.wireless.enable = true;
+  networking.wireless.networks = {
+    "TP-Link_E982" = {
+      psk = "42736479";
+    };
+    "TP-Link_E982_5G" = {
+      psk = "42736479";
+    };
+  };
 
   time.timeZone = "Europe/Bucharest";
   services.displayManager.ly.enable = true;
