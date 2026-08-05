@@ -7,9 +7,8 @@ import subprocess
 
 
 mod = "mod4"
-# terminal = guess_terminal()
-terminal = "kitty"
-myTerm = "kitty"      # My terminal of choice
+terminal = guess_terminal()
+myTerm = "alacritty"      # My terminal of choice
 
 keys = [
     Key([mod], "h", lazy.layout.left(), desc="Move focus to left"),
@@ -60,8 +59,13 @@ keys = [
         lazy.spawn('sh -c "maim -s | xclip -selection clipboard -t image/png -i"'),
         desc="Screenshot"
     ),
-    Key([mod], "b", lazy.spawn("firefox")),
-    Key([mod], "f", lazy.spawn("pcmanfm")),
+    Key([mod], "b", lazy.spawn("brave")),
+    # Key([mod], "f", lazy.spawn("pcmanfm")),
+    
+    # sound
+    Key([], "XF86AudioRaiseVolume", lazy.spawn("wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.05+")),
+    Key([], "XF86AudioLowerVolume", lazy.spawn("wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.05-")),
+    Key([], "XF86AudioMute", lazy.spawn("wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle")),
 ]
 
 # Add key bindings to switch VTs in Wayland.

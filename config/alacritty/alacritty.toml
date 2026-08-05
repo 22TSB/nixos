@@ -6,7 +6,7 @@ x = 6
 
 [font]
 # normal = { family = "CascadiaMono Nerd Font", style = "Regular" }
-size = 12
+size = 18
 
 [colors.bright]
 black = "#444b6a"

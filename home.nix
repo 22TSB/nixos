@@ -21,14 +21,14 @@ in
   home.homeDirectory = "/home/bogdan";
   home.stateVersion = "26.05";
   home.sessionVariables = {
-    TERMINAL = "kitty";
+    TERMINAL = "alacritty";
   };
 
-  programs.zsh = {
+  programs.fish = {
     enable = true;
-    enableCompletion = true;
-    autosuggestion.enable = true;
-    syntaxHighlighting.enable = true;
+    interactiveShellInit = ''
+      set -g fish_greeting ""
+    '';
 
     shellAliases = {
       btw = "echo i use nixos-btw";
@@ -40,17 +40,6 @@ in
       sd = "shutdown now";
       rn = "reboot";
     };
-
-    oh-my-zsh = {
-      enable = true;
-      theme = "robbyrussell";
-      plugins = [ "git" "history" ];
-    };
-
-    initContent = ''
-      source ${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k/powerlevel10k.zsh-theme
-      [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-    '';
   };
 
   xdg.configFile = builtins.mapAttrs
@@ -82,5 +71,13 @@ in
     zsh-powerlevel10k
     kitty
     alacritty
+    brave
+    fish
+    fishPlugins.done
+    fishPlugins.fzf-fish
+    fishPlugins.forgit
+    feh
+    vlc
+    gimp
   ];
 }

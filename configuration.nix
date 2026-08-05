@@ -14,21 +14,34 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables= true;
 
+  hardware.bluetooth.enable = true;
+
+  services.blueman.enable = true;
+
+  services.pipewire = {
+    enable = true;
+    alsa.enable = true;
+    alsa.support32Bit = true;
+    pulse.enable = true;
+    jack.enable = true;
+  };
+
   networking.hostName = "bogdan22tsb";
+
   # wired network
-  # networking.networkmanager.enable = true;
+  networking.networkmanager.enable = true;
 
   # wireless network
-  networking.networkmanager.enable = false;
-  networking.wireless.enable = true;
-  networking.wireless.networks = {
-    "TP-Link_E982" = {
-      psk = "42736479";
-    };
-    "TP-Link_E982_5G" = {
-      psk = "42736479";
-    };
-  };
+  # networking.networkmanager.enable = false;
+  # networking.wireless.enable = true;
+  # networking.wireless.networks = {
+  #   "TP-Link_E982" = {
+  #     psk = "42736479";
+  #   };
+  #   "TP-Link_E982_5G" = {
+  #     psk = "42736479";
+  #   };
+  # };
 
   time.timeZone = "Europe/Bucharest";
   services.displayManager.ly.enable = true;
@@ -55,11 +68,11 @@
 
   services.picom.enable = true;
 
-  users.defaultUserShell = pkgs.zsh;
-  programs.zsh.enable = true;
+  users.defaultUserShell = pkgs.fish;
+  programs.fish.enable = true;
   users.users.bogdan = {
     isNormalUser = true;
-    shell = pkgs.zsh;
+    shell = pkgs.fish;
     extraGroups = [ "wheel" ];
     packages = with pkgs; [
       tree
