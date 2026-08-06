@@ -41,21 +41,22 @@
   time.timeZone = "Europe/Bucharest";
   services.displayManager.ly.enable = true;
 
-  services.xserver.windowManager.oxwm.enable = true;
-
-  services.xserver.windowManager.dwm = {
-    enable = true;
-    package = pkgs.dwm.overrideAttrs {
-      src = ./config/dwm;
-    };
-  };
-
   services.xserver = {
+    enable = true;
+    autoRepeatDelay = 200;
+    autoRepeatInterval = 35;
+
+    windowManager.oxwm.enable = true;
+    windowManager.qtile.enable = true;
+    windowManager.dwm = {
       enable = true;
-      autoRepeatDelay = 200;
-      autoRepeatInterval = 35;
-      windowManager.qtile.enable = true;
-      displayManager.sessionCommands = ''
+      package = pkgs.dwm.overrideAttrs {
+        src = ./config/dwm;
+      };
+    };
+
+    displayManager.sessionCommands = ''
+        xrandr --output DP-2 --mode 3440x1440 --rate 180
         xwallpaper --center ~/walls/rae.png
         xset r rate 200 35 &
       '';
