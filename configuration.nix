@@ -6,11 +6,6 @@
       /etc/nixos/hardware-configuration.nix
     ];
 
-  # legacy
-  # boot.loader.grub.enable = true;
-  # boot.loader.grub.device = "/dev/sda";
- 
-  # uefi
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables= true;
 
