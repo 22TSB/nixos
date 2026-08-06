@@ -76,6 +76,7 @@
   };
 
   programs.firefox.enable = true;
+  programs.steam.enable = true;
 
   nixpkgs.config.allowUnfree = true;
 
@@ -101,6 +102,14 @@
     nerd-fonts.hack
     nerd-fonts.caskaydia-mono
   ];
+
+  # desktop settings
+  hardware.graphics = {
+    enable = true;
+    enable32Bit = true;
+  };
+
+  services.xserver.videoDrivers = ["amdgpu"];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   system.stateVersion = "26.05";

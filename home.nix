@@ -79,5 +79,6 @@ in
     feh
     vlc
     gimp
+    bottles
   ];
 }
