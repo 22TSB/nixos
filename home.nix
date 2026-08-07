@@ -82,5 +82,6 @@ in
     bottles
     kdePackages.dolphin
     kdePackages.spectacle
+    playerctl
   ];
 }
