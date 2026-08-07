@@ -104,12 +104,15 @@
   ];
 
   # desktop settings
+  boot.kernelPackages = pkgs.linuxPackages_latest;
+
+  boot.initrd.kernelModules = [ "amdgpu" ];
+  services.xserver.videoDrivers = [ "amdgpu" ];
+
   hardware.graphics = {
     enable = true;
     enable32Bit = true;
   };
-
-  services.xserver.videoDrivers = ["amdgpu"];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   system.stateVersion = "26.05";
