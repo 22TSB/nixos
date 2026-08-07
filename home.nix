@@ -22,7 +22,6 @@ in
   home.stateVersion = "26.05";
   home.sessionVariables = {
     TERMINAL = "alacritty";
-    QT_QPA_PLATFORMTHEME = "kde";
   };
 
   programs.fish = {
@@ -81,7 +80,15 @@ in
     vlc
     gimp
     bottles
-    kdePackages.dolphin
+    (pkgs.symlinkJoin {
+    name = "dolphin-wrapped";
+    paths = [ pkgs.kdePackages.dolphin ];
+    buildInputs = [ pkgs.makeWrapper ];
+    postBuild = ''
+      wrapProgram $out/bin/dolphin \
+        --add-flags "-stylesheet \"data:text/css,QWidget { color: #c0caf5; }\""
+    '';
+    })
     kdePackages.spectacle
     playerctl
     cmus
