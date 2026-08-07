@@ -22,6 +22,7 @@ in
   home.stateVersion = "26.05";
   home.sessionVariables = {
     TERMINAL = "alacritty";
+    QT_QPA_PLATFORMTHEME = "kde";
   };
 
   programs.fish = {
