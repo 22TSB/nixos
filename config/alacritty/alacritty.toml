@@ -5,7 +5,7 @@ y = 6
 x = 6  
 
 [font]
-# normal = { family = "CascadiaMono Nerd Font", style = "Regular" }
+normal = { family = "CaskaydiaMono Nerd Font", style = "Regular" }
 size = 18
 
 [colors.bright]

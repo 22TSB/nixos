@@ -1,5 +1,6 @@
 configuration{
     modi: ["drun", "window", "run"];
+    font: "CaskaydiaMono Nerd Font 12";
     icon-theme: "Papirus-Dark";
     show-icons: true;
     terminal: "alacritty";

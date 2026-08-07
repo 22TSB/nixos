@@ -9,6 +9,7 @@ import subprocess
 mod = "mod4"
 terminal = guess_terminal()
 myTerm = "alacritty"      # My terminal of choice
+myFont = "CaskaydiaMono Nerd Font Propo Bold"
 
 keys = [
     Key([mod], "h", lazy.layout.left(), desc="Move focus to left"),
@@ -149,9 +150,8 @@ layouts = [
 ]
 
 widget_defaults = dict(
-    # font="JetBrainsMono Nerd Font Propo Bold",
-    # font="Ubuntu Bold",
-    fontsize=14,
+    font=myFont,
+    fontsize=16,
     padding=0,
     background=colors[0],
 )
@@ -196,7 +196,7 @@ screens = [
                 ),
                 widget.TextBox(
                     text = '|',
-                    font = "JetBrainsMono Nerd Font Propo Bold",
+                    font = myFont,
                     foreground = colors[9],
                     padding = 2,
                     fontsize = 14
@@ -207,7 +207,7 @@ screens = [
                 ),
                 widget.TextBox(
                     text = '|',
-                    font = "JetBrainsMono Nerd Font Propo Bold",
+                    font = myFont,
                     foreground = colors[9],
                     padding = 2,
                     fontsize = 14
