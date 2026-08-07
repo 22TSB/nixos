@@ -80,5 +80,7 @@ in
     vlc
     gimp
     bottles
+    kdePackages.dolphin
+    kdePackages.spectacle
   ];
 }
