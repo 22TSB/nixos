@@ -83,5 +83,6 @@ in
     kdePackages.dolphin
     kdePackages.spectacle
     playerctl
+    cmus
   ];
 }
