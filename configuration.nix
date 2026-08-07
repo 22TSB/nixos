@@ -103,6 +103,13 @@
     nerd-fonts.caskaydia-mono
   ];
 
+  # Enable udisks2 service for storage management
+  services.udisks2.enable = true;
+
+  # Enable GVfs for Dolphin to interact with storage devices
+  services.gvfs.enable = true;
+
+
   # desktop settings
   boot.kernelPackages = pkgs.linuxPackages_latest;
 
