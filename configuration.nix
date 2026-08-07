@@ -56,7 +56,7 @@
     };
 
     displayManager.sessionCommands = ''
-        xrandr --output DP-2 --mode 3440x1440 --rate 180
+        xrandr --output DisplayPort-1 --mode 3440x1440 --rate 180
         xwallpaper --center ~/walls/rae.png
         xset r rate 200 35 &
       '';
