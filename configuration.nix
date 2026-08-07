@@ -39,7 +39,9 @@
   };
 
   time.timeZone = "Europe/Bucharest";
+
   services.displayManager.ly.enable = true;
+  services.getty.autologinUser = "bogdan";
 
   services.xserver = {
     enable = true;
@@ -57,9 +59,14 @@
 
     displayManager.sessionCommands = ''
         xrandr --output DisplayPort-1 --mode 3440x1440 --rate 180
-        xwallpaper --center ~/walls/rae.png
+        xwallpaper --center ~/walls/raekwon.png
         xset r rate 200 35 &
       '';
+  };
+  
+  programs.hyprland = {
+    enable = true;
+    xwayland.enable = true;
   };
 
   services.picom.enable = true;

@@ -13,6 +13,8 @@ let
     picom = "picom";
     git = "git";
     kitty = "kitty";
+    hypr = "hypr";
+    waybar = "waybar";
   };
 in
 
@@ -92,5 +94,7 @@ in
     kdePackages.spectacle
     playerctl
     cmus
+    waybar
+    hyprpaper
   ];
 }
