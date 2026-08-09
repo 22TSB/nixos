@@ -27,7 +27,6 @@
   # networking.networkmanager.enable = true;
 
   # wireless network
-  networking.networkmanager.enable = false;
   networking.wireless.enable = true;
   networking.wireless.networks = {
     "TP-Link_E982" = {
