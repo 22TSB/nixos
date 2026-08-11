@@ -41,6 +41,7 @@ in
       vim = "nvim";
       sd = "shutdown now";
       rn = "reboot";
+      vv = "NVIM_APPNAME=nvim-new nvim";
     };
   };
 
