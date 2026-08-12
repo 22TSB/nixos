@@ -105,5 +105,6 @@ in
       ];
       text = builtins.readFile "${pkgs.nix-search-tv.src}/nixpkgs.sh";
     })
+    kdePackages.kdenlive
   ];
 }

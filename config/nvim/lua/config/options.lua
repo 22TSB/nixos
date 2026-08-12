@@ -1,11 +1,8 @@
--- OPTIONS
 local set = vim.opt
 
---line nums
-set.relativenumber = true
-set.number = true
+set.number = true -- line numbers
+set.relativenumber = true -- relative numbers from current position
 
--- indentation and tabs
 set.tabstop = 4
 set.shiftwidth = 4
 set.autoindent = true
@@ -14,6 +11,7 @@ set.expandtab = true
 -- search settings
 set.ignorecase = true
 set.smartcase = true
+set.incsearch = true
 
 -- appearance
 set.termguicolors = true
@@ -27,7 +25,7 @@ set.cursorline = true
 -- set.colorcolumn = "80"
 
 -- clipboard
-set.clipboard:append("unnamedplus")
+set.clipboard:append("unnamedplus") -- Paste from clipboard to vim
 
 -- backspace
 set.backspace = "indent,eol,start"
@@ -47,9 +45,6 @@ set.swapfile = false
 set.backup = false
 set.undodir = os.getenv("HOME") .. "/.vim/undodir"
 set.undofile = true
-
--- incremental search
-set.incsearch = true
 
 -- faster cursor hold
 set.updatetime = 50
