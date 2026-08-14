@@ -14,6 +14,7 @@ let
     kitty = "kitty";
     hypr = "hypr";
     waybar = "waybar";
+    nvim = "nvim";
   };
 in
 
