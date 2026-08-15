@@ -104,8 +104,3 @@ vim.api.nvim_create_user_command("Q", "q", { nargs = 0 })
 vim.api.nvim_create_user_command("Q", function(opts)
     vim.cmd("q" .. (opts.bang and "!" or ""))
 end, { bang = true })
-
--- source file
-vim.keymap.set("n", "<leader><leader>", function()
-    vim.cmd("so")
-end)

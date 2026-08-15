@@ -106,5 +106,6 @@ in
     })
     kdePackages.kdenlive
     kdePackages.gwenview
+    lua51Packages.luarocks
   ];
 }
