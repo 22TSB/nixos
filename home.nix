@@ -108,5 +108,6 @@ in
     kdePackages.gwenview
     lua51Packages.luarocks
     qbittorrent
+    kdePackages.kio-extras 
   ];
 }
