@@ -109,5 +109,6 @@ in
     lua51Packages.luarocks
     qbittorrent
     kdePackages.kio-extras 
+    pavucontrol
   ];
 }
