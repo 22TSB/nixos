@@ -110,5 +110,6 @@ in
     qbittorrent
     kdePackages.kio-extras 
     pavucontrol
+    lazygit
   ];
 }
