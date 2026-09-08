@@ -5,7 +5,7 @@ let
 
   # Standard .config/directory
   configs = {
-    qtile = "qtile";
+    # qtile = "qtile";
     rofi = "rofi";
     alacritty = "alacritty";
     picom = "picom";
