@@ -94,10 +94,6 @@
     wget
     git
   ];
-
-  # automatic  updating
-  system.autoUpgrade.enable = true;
-  system.autoUpgrade.dates = "weekly";
   
   # automatic cleanup
   nix.gc.automatic = true;
@@ -117,7 +113,6 @@
 
   # Enable GVfs for Dolphin to interact with storage devices
   services.gvfs.enable = true;
-
 
   # desktop settings
   boot.kernelPackages = pkgs.linuxPackages_latest;
