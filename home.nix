@@ -51,7 +51,6 @@ in
     configs;
 
   home.packages = with pkgs; [
-    neovim
     ripgrep
     nil
     nixpkgs-fmt
