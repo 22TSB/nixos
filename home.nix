@@ -25,12 +25,6 @@ in
     TERMINAL = "alacritty";
   };
 
-  programs.neovim = {
-    enable = true;
-    defaultEditor = true;
-    vimAlias = true;
-  };
-
   programs.fish = {
     enable = true;
     interactiveShellInit = ''
@@ -57,6 +51,7 @@ in
     configs;
 
   home.packages = with pkgs; [
+    neovim
     ripgrep
     nil
     nixpkgs-fmt
