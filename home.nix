@@ -13,7 +13,7 @@ let
     kitty = "kitty";
     hypr = "hypr";
     waybar = "waybar";
-    # nvim = "nvim";
+    nvim = "nvim";
   };
 in
 
@@ -23,6 +23,12 @@ in
   home.stateVersion = "26.05";
   home.sessionVariables = {
     TERMINAL = "alacritty";
+  };
+
+  programs.neovim = {
+    enable = true;
+    defaultEditor = true;
+    vimAlias = true;
   };
 
   programs.fish = {
