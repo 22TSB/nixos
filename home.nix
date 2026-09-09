@@ -111,6 +111,5 @@ in
     kdePackages.kio-extras 
     pavucontrol
     lazygit
-    make
   ];
 }
