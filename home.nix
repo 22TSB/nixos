@@ -51,11 +51,34 @@ in
     configs;
 
   home.packages = with pkgs; [
+    # core
+    gnutar
+    unzip
+
+    # search / nav
+    fd
     ripgrep
+
+    # build tools
+    gcc
+    gnumake
+    cmake
+
+    # rust
+    rustup
+
+    # treesitter CLI
+    tree-sitter
+
+    # git UI
+    lazygit
+
+    # image support for Snacks
+    imagemagick
+
     nil
     nixpkgs-fmt
     nodejs
-    gcc
     rofi
     xwallpaper
     fastfetch
@@ -109,7 +132,5 @@ in
     qbittorrent
     kdePackages.kio-extras 
     pavucontrol
-    lazygit
-    cmake
   ];
 }
