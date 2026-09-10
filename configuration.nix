@@ -89,10 +89,12 @@
   nixpkgs.config.allowUnfree = true;
 
   environment.systemPackages = with pkgs; [
+    git
     vim
     neovim
     wget
-    git
+    clang
+    clang-tools
   ];
   
   # automatic cleanup
