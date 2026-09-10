@@ -51,6 +51,8 @@ in
     configs;
 
   home.packages = with pkgs; [
+    neovim
+
     # clipboard
     wl-clipboard
 

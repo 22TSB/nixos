@@ -91,7 +91,6 @@
   environment.systemPackages = with pkgs; [
     git
     vim
-    neovim
     wget
     clang
     clang-tools
