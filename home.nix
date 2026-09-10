@@ -53,6 +53,9 @@ in
   home.packages = with pkgs; [
     neovim
 
+    # nix treesitter
+    vimPlugins.nvim-treesitter-parsers.nix
+
     # clipboard
     wl-clipboard
 
