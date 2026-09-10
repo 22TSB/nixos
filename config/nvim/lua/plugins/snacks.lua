@@ -156,11 +156,11 @@ return {
 
             -- Snacks Picker
             { "<leader>pws", function() require("snacks").picker.grep_word() end, desc = "Search Visual selection or Word", mode = { "n", "x" } },
-            { "<leader>ps", function() require("snacks").picker.grep() end, desc = "Grep Word" },
+            -- { "<leader>ps", function() require("snacks").picker.grep() end, desc = "Grep Word" },
             { "<leader>pk", function() require("snacks").picker.keymaps({ layout = "ivy" }) end, desc = "Search Keymaps (Snacks Picker)" },
-            { "<leader>pf", function() require("snacks").picker.files() end, desc = "Find Files (Snacks Picker)" },
-            { "<leader>ff", function() require("snacks").picker.files() end, desc = "Find Files (Snacks Picker)" },
-            { "<leader>pc", function() require("snacks").picker.files({ cwd = vim.fn.stdpath("config") }) end, desc = "Find Config Files" },
+            -- { "<leader>pf", function() require("snacks").picker.files() end, desc = "Find Files (Snacks Picker)" },
+            -- { "<leader>ff", function() require("snacks").picker.files() end, desc = "Find Files (Snacks Picker)" },
+            -- { "<leader>pc", function() require("snacks").picker.files({ cwd = vim.fn.stdpath("config") }) end, desc = "Find Config Files" },
 
             -- Git Stuff
             { "<leader>gbr", function() require("snacks").picker.git_branches({ layout = "select" }) end, desc = "Pick and Switch Git Branches" },
