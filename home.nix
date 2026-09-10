@@ -51,6 +51,20 @@ in
     configs;
 
   home.packages = with pkgs; [
+    # clipboard
+    wl-clipboard
+
+    # lsp
+    lua-language-server
+    vscode-langservers-extracted
+    typescript-language-server
+    typescript
+    intelephense
+
+    # php tools
+    php
+    phpPackages.php-cs-fixer
+
     # core
     gnutar
     unzip
