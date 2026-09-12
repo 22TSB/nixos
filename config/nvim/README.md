@@ -115,3 +115,32 @@ Below is a running list of what and how to install the lsp's that are going to b
 4. { typescript-language-server }
   - npm install -g typescript-language-server typescript
 
+
+Dependencies:
+    neovim
+    git
+    curl
+    ripgrep
+    fd
+    gcc
+    gnumake
+
+    lua-language-server
+
+    nodejs
+    typescript
+    typescript-language-server
+    vscode-langservers-extracted
+    intelephense
+
+    php
+    phpPackages.php-cs-fixer
+
+    wl-clipboard # clipboard
+
+
+Termux:
+    clang
+    make
+
+    termux-api # clipboard
