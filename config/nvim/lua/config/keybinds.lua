@@ -22,7 +22,7 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz")
 
 
 -- N: center screen when looping search results "/text": (n/N)
-vim.keymap.set("n", "n", "nzzzv")       
+vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
 
 
@@ -32,7 +32,7 @@ vim.keymap.set("x", "<leader>p", [["_dP]])
 vim.keymap.set("v", "p", '"_dp', opts)
 
 
--- NV: Delete and don't yank to register 
+-- NV: Delete and don't yank to register
 vim.keymap.set({ "n", "v" }, "<leader>d", [["_d]])
 
 
@@ -67,7 +67,8 @@ vim.keymap.set("n", "<leader>cc", "<cmd>!php-cs-fixer fix % --using-cache=no<cr>
 
 
 -- N: Replace the word cursor is on globally: (<space> + s)
-vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]], { desc = "Replace word cursor is on globally" })
+vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]],
+    { desc = "Replace word cursor is on globally" })
 
 
 -- N: make file executable: (<space> + x)
@@ -112,7 +113,7 @@ vim.keymap.set("n", "<leader>`", ":<C-u>term<CR>i", opts)
 
 
 -- V: copy to clipboard: (<space> + y)
-vim.keymap.set("v", "<leader>y", '"+y', opts)
+-- vim.keymap.set("v", "<leader>y", '"+y', opts)
 
 
 -- I: auto-closing brackets and quotes
