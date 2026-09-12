@@ -53,6 +53,9 @@ in
   home.packages = with pkgs; [
     neovim
 
+    # live server
+    live-server
+
     # emmet
     emmet-language-server
 
