@@ -53,6 +53,9 @@ in
   home.packages = with pkgs; [
     neovim
 
+    # emmet
+    emmet-language-server
+
     # nix treesitter
     vimPlugins.nvim-treesitter-parsers.nix
 
