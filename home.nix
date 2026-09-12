@@ -13,7 +13,7 @@ let
     kitty = "kitty";
     hypr = "hypr";
     waybar = "waybar";
-    nvim = "nvim";
+    # nvim = "nvim";
   };
 in
 
@@ -81,9 +81,13 @@ in
     fd
     ripgrep
 
+    # js tools
+    vscode-js-debug
+
     # build tools
     gcc
     gnumake
+    gdb
     cmake
 
     # rust
