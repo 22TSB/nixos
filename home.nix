@@ -161,5 +161,6 @@ in
     qbittorrent
     kdePackages.kio-extras 
     pavucontrol
+    obs-studio
   ];
 }
