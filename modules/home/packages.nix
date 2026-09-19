@@ -41,10 +41,6 @@
     # build tools
     gcc
     gnumake
-    wget
-    clang
-    clang-tools
-
     gdb
     cmake
 

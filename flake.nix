@@ -29,8 +29,8 @@
       };
     in {
       nixosConfigurations = {
-        desktop  = mkHost "desktop";
-        laptop = mkHost "laptop";
+        bogdan22tsb  = mkHost "bogdan22tsb";
+        bogdan-laptop = mkHost "bogdan-laptop";
       }; 
     };
 }
