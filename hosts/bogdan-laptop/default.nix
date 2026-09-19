@@ -7,6 +7,6 @@
     ../../modules/laptop
   ];
 
-  networking.hostName = "laptop";
+  networking.hostName = "bogdan-laptop";
   system.stateVersion = "26.05";
 }

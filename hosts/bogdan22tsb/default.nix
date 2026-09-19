@@ -7,6 +7,6 @@
     ../../modules/desktop-pc
   ];
 
-  networking.hostName = "desktop";
+  networking.hostName = "bogdan22tsb";
   system.stateVersion = "26.05";
 }
