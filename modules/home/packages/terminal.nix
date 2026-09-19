@@ -19,6 +19,7 @@
     fastfetch
     btop
     stress-ng
+    tree
 
     # terminal fun
     figlet
