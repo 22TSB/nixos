@@ -2,7 +2,6 @@
 
 {
   users.defaultUserShell = pkgs.fish;
-
   programs.fish.enable = true;
 
   users.users.bogdan = {

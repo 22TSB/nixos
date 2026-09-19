@@ -5,6 +5,5 @@
     ./wayland.nix
     ./dwm.nix
     ./oxwm.nix
-    ./qtile.nix
   ];
 }

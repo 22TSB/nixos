@@ -1,56 +1,6 @@
-{ config, pkgs, ... }:
-
-let
-  dotfiles = "${config.home.homeDirectory}/nixos-dotfiles/config";
-  create_symlink = path: config.lib.file.mkOutOfStoreSymlink path;
-
-  # Standard .config/directory
-  configs = {
-    # qtile = "qtile";
-    rofi = "rofi";
-    alacritty = "alacritty";
-    picom = "picom";
-    git = "git";
-    kitty = "kitty";
-    hypr = "hypr";
-    waybar = "waybar";
-    # nvim = "nvim";
-  };
-in
+{ pkgs, ... }:
 
 {
-  home.username = "bogdan";
-  home.homeDirectory = "/home/bogdan";
-  home.stateVersion = "26.05";
-  home.sessionVariables = {
-    TERMINAL = "alacritty";
-  };
-
-  programs.fish = {
-    enable = true;
-    interactiveShellInit = ''
-      set -g fish_greeting ""
-    '';
-
-    shellAliases = {
-      btw = "echo i use nixos-btw";
-      nrs = "sudo nixos-rebuild switch --impure --flake ~/nixos-dotfiles#bogdan22tsb";
-      syu = "sudo nixos-rebuild switch --upgrade";
-      fs = "fastfetch";
-      e = "exit";
-      vim = "nvim";
-      sd = "shutdown now";
-      rn = "reboot";
-    };
-  };
-
-  xdg.configFile = builtins.mapAttrs
-    (name: subpath: {
-      source = create_symlink "${dotfiles}/${subpath}";
-      recursive = true;
-    })
-    configs;
-
   home.packages = with pkgs; [
     neovim
 
@@ -91,6 +41,10 @@ in
     # build tools
     gcc
     gnumake
+    wget
+    clang
+    clang-tools
+
     gdb
     cmake
 
