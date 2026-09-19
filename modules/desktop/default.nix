@@ -5,5 +5,6 @@
     ./wayland.nix
     ./dwm.nix
     ./oxwm.nix
+    ./xmonad.nix
   ];
 }

@@ -15,6 +15,9 @@
     kdePackages.kio-extras
     qbittorrent
 
+    haskell-language-server
+    xmobar
+
     (pkgs.symlinkJoin {
       name = "dolphin-wrapped";
       paths = [ pkgs.kdePackages.dolphin ];

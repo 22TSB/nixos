@@ -7,11 +7,17 @@ let
   configs = {
     alacritty = "alacritty";
     kitty = "kitty";
+
     git = "git";
+
+    picom = "picom";
     rofi = "rofi";
+
     hypr = "hypr";
     waybar = "waybar";
-    picom = "picom";
+
+    xmonad = "xmonad";
+    xmobar = "xmobar";
   };
 in
 {
