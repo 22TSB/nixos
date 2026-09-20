@@ -1,7 +1,7 @@
 {
   imports = [
     ./bootLoader.nix
-    ./gpu.nix
-    ./x11-monitor.nix
+    ./power.nix
+    ./wireless.nix
   ];
 }

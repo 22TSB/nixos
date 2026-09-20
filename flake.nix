@@ -30,7 +30,8 @@
     in {
       nixosConfigurations = {
         bogdan22tsb  = mkHost "bogdan22tsb";
-        bogdan-laptop = mkHost "bogdan-laptop";
+        laptop-hp845 = mkHost "laptop-hp845";
+        laptop-s710 = mkHost "laptop-s710";
       }; 
     };
 }

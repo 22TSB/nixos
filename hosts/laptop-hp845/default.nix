@@ -4,9 +4,9 @@
 
     ../../modules/common
     ../../modules/desktop
-    ../../modules/laptop
+    ../../modules/laptop-hp845
   ];
 
-  networking.hostName = "bogdan-laptop";
+  networking.hostName = "laptop-hp845";
   system.stateVersion = "26.05";
 }
