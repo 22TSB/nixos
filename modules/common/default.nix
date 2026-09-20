@@ -6,7 +6,6 @@
     ./fonts.nix
     ./audio.nix
     ./bluetooth.nix
-    ./networking.nix
     ./time.nix
     ./programs.nix
   ];
