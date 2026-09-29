@@ -9,6 +9,7 @@
     wl-clipboard
     pavucontrol
     brave
+    networkmanager
 
     pcmanfm
     kdePackages.spectacle

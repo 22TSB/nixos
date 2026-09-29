@@ -8,5 +8,6 @@
     ./bluetooth.nix
     ./time.nix
     ./programs.nix
+    ./networking.nix
   ];
 }
