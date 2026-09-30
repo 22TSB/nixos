@@ -10,6 +10,7 @@
     pavucontrol
     brave
     networkmanager
+    libreoffice
 
     pcmanfm
     kdePackages.spectacle
