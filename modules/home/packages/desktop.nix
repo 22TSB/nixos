@@ -11,6 +11,8 @@
     brave
     networkmanager
     libreoffice
+    hyprshot
+    hyprpicker
 
     pcmanfm
     kdePackages.spectacle
