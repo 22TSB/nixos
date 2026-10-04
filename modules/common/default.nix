@@ -9,5 +9,6 @@
     ./time.nix
     ./programs.nix
     ./networking.nix
+    ./vial.nix
   ];
 }
