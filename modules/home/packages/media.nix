@@ -10,6 +10,7 @@
     obs-studio
     kdePackages.kdenlive
     kdePackages.gwenview
+    kdePackages.okular
 
     cmus
     playerctl
