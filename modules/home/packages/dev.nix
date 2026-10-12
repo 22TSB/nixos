@@ -2,6 +2,9 @@
 
 {
   home.packages = with pkgs; [
+    # TUI fileManager
+    yazi
+
     # editor + nvim ecosystem
     neovim
     live-server
@@ -27,6 +30,8 @@
     rustup
     nodejs
     lua51Packages.luarocks
+    nasm
+    python3
 
     # nix tooling
     nil
