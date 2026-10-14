@@ -32,6 +32,7 @@
     lua51Packages.luarocks
     nasm
     python3
+    python313Packages.debugpy
 
     # nix tooling
     nil

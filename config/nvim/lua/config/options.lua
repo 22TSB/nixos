@@ -73,3 +73,9 @@ vim.opt.wrap = true      -- enable soft wrapping
 vim.opt.linebreak = true -- wrap at word boundaries
 vim.opt.textwidth = 0    -- no hard wrapping
 vim.opt.wrapmargin = 0
+
+
+-- fold
+vim.o.foldmethod = 'expr'
+vim.o.foldexpr = 'v:lua.vim.treesitter.foldexpr()'
+vim.o.foldlevelstart = 99 -- Keeps code open by default when you load a file

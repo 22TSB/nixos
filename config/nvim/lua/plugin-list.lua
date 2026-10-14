@@ -6,7 +6,7 @@ return {
     "hrsh7th/cmp-path",
     "hrsh7th/cmp-buffer",
     "nvim-telescope/telescope.nvim",
-    { "ThePrimeagen/harpoon", branch = "harpoon2" },
+    { "ThePrimeagen/harpoon",            branch = "harpoon2" },
     "folke/tokyonight.nvim",
     "nvim-lualine/lualine.nvim",
     "brenoprata10/nvim-highlight-colors",
@@ -26,4 +26,6 @@ return {
     "theHamsta/nvim-dap-virtual-text",
     "nvim-neotest/nvim-nio",
     "rcarriga/nvim-dap-ui",
+
+    { "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" }
 }
