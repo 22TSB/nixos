@@ -15,6 +15,8 @@
       vim = "nvim";
       sd = "shutdown now";
       rn = "reboot";
+      basm = "nasm -g -f elf64 programm.asm -o programm.o";
+      bgcc = "gcc -g -no-pie programm.o -o programm";
     };
   };
 }
