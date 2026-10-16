@@ -2,7 +2,8 @@
 
 {
   home.packages = with pkgs; [
-    # TUI fileManager
+    # terminal
+    tmux
     yazi
 
     # editor + nvim ecosystem

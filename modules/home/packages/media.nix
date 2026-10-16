@@ -12,6 +12,7 @@
     kdePackages.gwenview
     kdePackages.okular
 
+    zip
     cmus
     playerctl
   ];
