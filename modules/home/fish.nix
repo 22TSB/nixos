@@ -17,6 +17,7 @@
       rn = "reboot";
       basm = "nasm -g -f elf64 1.asm -o 1.o";
       bgcc = "gcc -g -no-pie 1.o -o 1";
+      py = "python";
     };
   };
 }
