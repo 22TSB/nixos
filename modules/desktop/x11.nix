@@ -9,5 +9,14 @@
     '';
   };
 
-  services.picom.enable = true;
+  services.picom = {
+    enable = true;
+    backend = "glx";
+    vSync = true;
+
+    settings = {
+      use-damage = true;
+      unredir-if-possible = false;
+    };
+  };
 }
