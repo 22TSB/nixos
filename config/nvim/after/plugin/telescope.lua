@@ -17,7 +17,18 @@ vim.keymap.set("n", "<leader>fo", builtin.oldfiles)
 vim.keymap.set("n", "<leader>fq", builtin.quickfix)
 vim.keymap.set("n", "<leader>fh", builtin.help_tags, { desc = "Telescope help tags" })
 vim.keymap.set("n", "<leader>fm", function()
-    builtin.man_pages({ sections = { "ALL" } })
+    builtin.man_pages({
+        sections = { "ALL" },
+        attach_mappings = function(prompt_bufnr, map)
+            local actions = require("telescope.actions")
+            actions.select_default:enhance({
+                post = function()
+                    vim.cmd("only")
+                end,
+            })
+            return true
+        end,
+    })
 end, { desc = "Telescope man pages" })
 vim.keymap.set("n", "<leader>fb", builtin.buffers, { desc = "Telescope buffers" })
 vim.keymap.set("n", "<leader>fg", function()

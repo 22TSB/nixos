@@ -6,7 +6,7 @@
   programs.steam.enable = true;
 
   environment.systemPackages = with pkgs; [
-    git vim wget clang clang-tools
+    git vim wget clang clang-tools fzf
   ];
 
   services.udisks2.enable = true;
