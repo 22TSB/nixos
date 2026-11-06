@@ -12,4 +12,14 @@
 
   # Compressed memory swap
   zramSwap.enable = true;
+
+  environment.sessionVariables = {
+    # Forces Firefox and Chromium to use hardware acceleration windows
+    MOZ_DISABLE_RDD_SANDBOX = "1"; 
+    LIBVA_DRIVER_NAME = "radeonsi";
+    VDPAU_DRIVER_NAME = "radeonsi";
+    
+    # Forces Chromium-based browsers to use native Ozone platform for X11/Wayland
+    NIXOS_OZONE_HWACCEL = "1";
+  };
 }

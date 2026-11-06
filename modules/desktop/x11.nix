@@ -16,7 +16,7 @@
 
     settings = {
       use-damage = true;
-      unredir-if-possible = false;
+      unredir-if-possible = true;
     };
   };
 }
