@@ -9,6 +9,7 @@
     wl-clipboard
     pavucontrol
     brave
+    librewolf
     networkmanager
     libreoffice
     hyprshot
