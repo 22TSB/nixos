@@ -18,6 +18,7 @@
     kdePackages.spectacle
     kdePackages.kio-extras
     qbittorrent
+    gnome-calculator
 
     haskell-language-server
     xmobar
