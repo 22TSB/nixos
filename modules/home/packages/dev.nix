@@ -41,5 +41,6 @@
 
     # git
     lazygit
+    git-lfs
   ];
 }
